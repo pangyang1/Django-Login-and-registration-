@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Login and Registration</title>
+        {% load static %}
+        <link rel="stylesheet"
+    </head>
+    <body>
+        <div class="alert alert-success" role="alert'">
+            <strong>Hello, {{ user.first_name }}!</strong>
+        <form align="right" name="form1" method="post" action="logout">
+            <input name="submit" type="submit" id="submit" value="log out">
+            <action="" method="post"> {% csrf_token %}
+        </form>
+        </div>
+    </body>
+</html>
